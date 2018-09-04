@@ -1,0 +1,12 @@
+C:\Users\SAURABH\source\repos\StudentCodeFirstApplication\StudentCodeFirstApplication\bin\Debug\StudentCodeFirstApplication.exe.config
+C:\Users\SAURABH\source\repos\StudentCodeFirstApplication\StudentCodeFirstApplication\bin\Debug\StudentCodeFirstApplication.exe
+C:\Users\SAURABH\source\repos\StudentCodeFirstApplication\StudentCodeFirstApplication\bin\Debug\StudentCodeFirstApplication.pdb
+C:\Users\SAURABH\source\repos\StudentCodeFirstApplication\StudentCodeFirstApplication\bin\Debug\EntityFramework.dll
+C:\Users\SAURABH\source\repos\StudentCodeFirstApplication\StudentCodeFirstApplication\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\SAURABH\source\repos\StudentCodeFirstApplication\StudentCodeFirstApplication\bin\Debug\EntityFramework.xml
+C:\Users\SAURABH\source\repos\StudentCodeFirstApplication\StudentCodeFirstApplication\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\SAURABH\source\repos\StudentCodeFirstApplication\StudentCodeFirstApplication\obj\Debug\StudentCodeFirstApplication.csprojAssemblyReference.cache
+C:\Users\SAURABH\source\repos\StudentCodeFirstApplication\StudentCodeFirstApplication\obj\Debug\StudentCodeFirstApplication.csproj.CoreCompileInputs.cache
+C:\Users\SAURABH\source\repos\StudentCodeFirstApplication\StudentCodeFirstApplication\obj\Debug\StudentCodeFirstApplication.csproj.CopyComplete
+C:\Users\SAURABH\source\repos\StudentCodeFirstApplication\StudentCodeFirstApplication\obj\Debug\StudentCodeFirstApplication.exe
+C:\Users\SAURABH\source\repos\StudentCodeFirstApplication\StudentCodeFirstApplication\obj\Debug\StudentCodeFirstApplication.pdb
