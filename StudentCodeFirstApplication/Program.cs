@@ -10,47 +10,60 @@ namespace StudentCodeFirstApplication
     {
         static void Main(string[] args)
         {
-            int select = 1;
+            string select = "";
 
             Program program = new Program();
 
-            Console.WriteLine("Enter Your Choice:\n" +
+            while(select != "6")
+            {
+                DisplayDetails();
+                select = Console.ReadLine();
+                switch (select)
+                {
+                    case "1":
+                        program.ViewStudentDetails();
+                        break;
+                    case "2":
+                        program.AddCourse();
+                        break;
+                    case "3":
+                        program.AddStudent();
+                        break;
+                    case "4":
+                        program.UpdateStudentDetails();
+                        Console.ReadKey();
+                        break;
+
+                    case "5":
+                        program.DeleteStudentDetails();
+                        break;
+                    case "6":
+                        break;
+                    default:
+                        Console.WriteLine("Please Choose Any one Option Between 1 to 5");
+                        break;
+                }
+            }
+        }
+
+            static void DisplayDetails()
+            {
+                Console.WriteLine("\n----------------------------------------\n" +
+                               "Enter Your Choice:\n" +
                               "1.Display Student And Course Details:\n" +
                               "2.Add Course:\n" +
                               "3.Add Student:\n" +
                               "4.Update Student and Course Details:\n" +
                               "5.Delete Student and Course Details:\n" +
-                              "6.Exit");
-
-
-            select = Convert.ToInt32(Console.ReadLine());
-
-            switch (select)
-            {
-                case 1:
-                    program.ViewStudentDetails();
-                    break;
-                case 2:
-                    program.AddCourse();
-                    break;
-                case 3:
-                    program.AddStudent();
-                    break;
-                case 4:
-                    program.UpdateStudentDetails();
-                    Console.ReadKey();
-                    break;
-
-                case 5:
-                    program.DeleteStudentDetails();
-                    break;
-
-                default:
-                    Console.WriteLine("Please Enter Number between 1 to 5");
-                    Console.ReadKey();
-                    break;
+                              "6.Exit\n"+
+                              "----------------------------------------");
             }
-        }
+            
+
+
+            
+
+            
         private void AddCourse()
         {
             using (StudentDBContext studentDBContext = new StudentDBContext())
@@ -84,7 +97,7 @@ namespace StudentCodeFirstApplication
                 Console.WriteLine("Enter Your Choice : ");
                 foreach (var item in studentDBContext.Course)
                 {
-                    Console.WriteLine(item.CourseName + "=>" + item.CourseID);
+                    Console.WriteLine(item.CourseID + "=>" + item.CourseName);
 
                 }
                 int courseID = Convert.ToInt32(Console.ReadLine());
@@ -111,7 +124,7 @@ namespace StudentCodeFirstApplication
                     studentDBContext.Student.Remove(student);
                 else
                     Console.WriteLine("StudentID is not Found ");
-                studentDBContext.SaveChanges();
+                    studentDBContext.SaveChanges();
             }
         }
         private void UpdateStudentDetails()
@@ -132,7 +145,7 @@ namespace StudentCodeFirstApplication
                     Console.WriteLine("Enter Your Choice : ");
                     foreach (var item in studentDBContext.Course)
                     {
-                        Console.WriteLine(item.CourseName + "=>" + item.CourseID);
+                        Console.WriteLine(item.CourseID + "=>" + item.CourseName);
 
                     }
                     int courseID = Convert.ToInt32(Console.ReadLine());
@@ -145,7 +158,7 @@ namespace StudentCodeFirstApplication
                 }
                 else
                     Console.WriteLine("StudentID is not Found ");
-                studentDBContext.SaveChanges();
+                    studentDBContext.SaveChanges();
             }
         }
         private void ViewStudentDetails()
